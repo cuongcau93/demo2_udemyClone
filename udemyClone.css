@@ -1,0 +1,248 @@
+
+body{
+	margin-top: 0px;
+	width: 100%;
+	margin-left: 0px;
+	font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.43;
+    color: #333;
+    background-image: url(https://udemy-images.udemy.com/homepage-promo/man_mockup_n.jpg);
+    background-image: url(https://udemy-images.udemy.com/homepage-promo/woman_phone.jpg);
+}
+.header{
+	margin-top: 0px;
+	font-family: Open Sans,Helvetica Neue;
+	z-index: 0;
+}
+.header_inner{
+	height: 48px;
+	border-top: 4px solid #17aa1c;
+    background: #3a3737; /* For browsers that do not support gradients */
+   
+    background: linear-gradient(black, transparent); /* Standard syntax */
+    opacity: 0.6;
+
+}
+.nav-text{
+	position: relative;
+    top: -46px;
+    margin-right: 0px;
+    margin-bottom: 270px;
+}
+.header_logo-container{
+	height: 100%;
+	width: 5%;
+	color: white;
+	margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    top: -25px;
+    font-size: 25px;
+    float: left;
+}
+
+.header_left{
+	height: 48px;
+	width: 67%;
+	float: left;
+	text-align: center;
+}
+
+.dropdown__main-link{
+	text-align: center;
+	font-size: 15px;
+    position: relative;
+    top: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown__toggle{
+	float: left;
+	margin-right: 30px;
+}
+
+.home-top-splash {
+    width: 840px;
+    height: 330px;
+    background: rgba(0,0,0,.85);
+    padding: 50px 60px;
+    margin: auto;
+    border-radius: 2px;
+    text-align: center;
+}
+.heading{
+	margin: 0;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1;
+    padding-bottom: 15px;
+}
+.subhead{
+	margin: 0;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1;
+    padding-bottom: 15px;
+}
+.search-field{
+	height: 60px;
+	width: 80%;
+	font-size: 18px;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+
+}
+.search-inp-container{
+	float: left;
+	margin-top: 20px;
+}
+.submit{
+	margin-left: -5px;
+	height: 66px;
+	width: 72px;
+    position: relative;
+    top: 13px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	background: #3F48CC;
+	border: black;
+
+}
+img{
+	height: 40px;
+	width: 30px;
+	text-align: center;
+}
+.icon{
+	margin-top: 60px;
+	float: left;
+	color: white;
+	height: 30px;
+	margin-right: 40px;
+	margin-left: 60px;
+}
+
+body {
+    background: url(https://udemy-images.udemy.com/homepage-promo/man_mockup_n.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-animation: changeBg 8s infinite;
+}
+
+@-webkit-keyframes changeBg {
+    
+    0% {
+        background-image: url(https://udemy-images.udemy.com/homepage-promo/man_mockup_n.jpg);
+    }
+    50% {
+        background-image: url(https://udemy-images.udemy.com/homepage-promo/woman_phone.jpg);
+    }
+    100% {
+        background-image: url(https://udemy-images.udemy.com/homepage-promo/man_mockup_n.jpg);
+    }
+
+}
+
+#parent{
+	visibility: hidden;
+	margin-top: 0px;
+	z-index: 1000 !important; 
+	position: fixed; 
+	width: 100%;
+}
+
+#outner{
+	visibility: hidden;
+	margin-top: 0px;
+	z-index: 1000 !important; 
+	position: fixed; 
+	width: 100%;
+}
+
+.child{
+	z-index: 1001;
+	position: relative; 
+	background-color: black; 
+	height: 1000px; 
+	margin: 10px; 
+	opacity: 0.8;
+	width: 100%;
+	text-align: center; 
+}
+
+.box-heading{
+	margin-top: 400px;
+	color: #355368
+}
+
+.login{
+	vertical-align;
+	z-index: 1004 !important;
+	background: #fff !important;
+	border-radius: 10px;
+	border: 2px solid #C0C0C0;
+	width: 600px;
+	height: 400px;
+	font-size: 20px;
+	position: relative;
+    margin: auto;
+    top: 25vh;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+    color: #355368;
+    font-size: 24px;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px 0;
+    font-weight: 300;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.imgLogin{
+	padding-top: 20px;
+	float: left;
+	height: 150px;
+	width: 50%;
+}
+
+.right{
+	padding-top: 10px;
+}
+
+.email{
+	margin-top: 10px;
+	width: 40%;
+	height: 35px;
+	border-radius: 5px;
+	border: 1 solid #C0C0C0;
+}
+
+.password{
+	margin-left: 5px;
+	margin-top: 20px;
+	width: 40%;
+	height: 35px;
+	border-radius: 5px;
+	border: 1 solid #C0C0C0;
+
+}
+.button{
+	background-color: #159D1A;
+	color: white;
+	margin-top: 20px;
+	width: 40%;
+	height: 40px;
+	border: 4 solid white;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.forgot{margin-top: 0px;
+	margin-left: 250px;
+	font-size: 15px;
+}

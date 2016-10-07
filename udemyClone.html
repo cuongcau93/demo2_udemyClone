@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Udemy Online Courses</title>
+	<link rel="stylesheet" href="udemyClone.css">
+
+</head>
+<body>
+	<div id="parent">
+      <div class="child">
+      	
+      </div>
+    </div>
+    <div id="outner">
+	  	<div class="login">
+	  		<h2>Login to your Udemy account!</h2>
+	  		<div class="input">
+		  		<div class="left">	
+					<img src="login.png" class="imgLogin">
+		  		</div>
+		  		<div class="right">
+		  			<label>Login with your email</label>
+		  			<input type="email" name="" placeholder="E-mail" class="email" required>
+		  			<input type="password" name="" placeholder="Password" class="password" required>
+		  			<br>
+		  			<input type="button" name="" value="Login" class="button" onclick = "checkLogin()" >
+		  			<br>
+		  			<a href="#" class="forgot">Forgot Password</a>
+		  			<input type="button" name="" value="cancel" id = "cancel" onclick="cancel()">
+		  		</div>
+	  		</div>
+	  	</div>
+    </div>
+
+	
+	<div class="header">
+
+		<div class="header_inner"> 
+		</div>
+		
+	   <div class="nav-text">
+		  <div class="header_logo-container">
+		    <p>udemy</p>
+		  </div>
+		  <div class="header_left">
+		    
+		  </div>
+		
+		  <div class="dropdown__toggle">
+		    <a href="#" class="dropdown__main-link ">Udemy for business</a>
+		  </div>
+		
+		  <div class="dropdown__toggle">
+		    <a href="#" class="dropdown__main-link">Become an Instructor</a>
+		  </div>
+		
+		  <div class="dropdown__toggle">
+		    <a href="#" class="dropdown__main-link " onclick="login()">Login</a>
+		  </div>
+		
+		  <div class="dropdown__toggle">
+		    <a href="#" class="dropdown__main-link">Sign Up</a>
+		  </div>			
+		</div>
+		
+		<div class="home-top-splash">
+		  <h1 class="heading">What course will your life take?</h1>
+		  <div class="subhead ">
+		    Own your future by learning new skills online
+		  </div>
+		  <div class="search-inp-container">
+		    
+		  </div>
+		  
+		  <tr>
+		    <td>
+		      <input type="text" name="" placeholder="Find a course on virtually anything" class="search-field">
+		      <button type="button" class="submit">
+		        <img src="images.png">
+		      </button>
+		    </td>
+		  </tr>
+
+		  <div class="icon">
+		    <p>Over 12 miliion students</p>
+		  </div>
+		
+		  <div class="icon">
+		    <p>More than 40,000 courses</p>
+		  </div>
+		  
+		  <div class="icon">
+		    <p>Learn at your pace on any device</p>
+		  </div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function login(){
+			document.getElementById("parent").style.visibility ="visible";
+			document.getElementById("outner").style.visibility = "visible";
+		}
+		function cancel(){
+			document.getElementById("parent").style.visibility ="hidden";
+			document.getElementById("outner").style.visibility = "hidden";
+		}
+
+		function checkLogin(){
+
+			var email = document.getElementsByClassName("email")[0];
+			var pass = document.getElementsByClassName("password")[0];
+			var lineBreak = "<br>"
+    		var text = '{"person":[' +
+				'{"email":"cuongnm22@wru.vn","password":"123456" },' +
+				'{"email":"hungvl@gmail.com","password":"123456" },' +
+				'{"email":"namnd@gmail.com","password":"123456" }]}';
+			obj = JSON.parse(text);
+			var lengthPerson = obj.person.length;
+			var message = "";
+			for(var i = 0; i < lengthPerson; i++){
+				if(email.value == obj.person[i].email && pass.value == obj.person[i].password){
+					message = new String("Login Success")
+					alert(message);
+					break;
+				}
+			}
+			if(message == null || message == ""){
+				message = new String("Login fail")
+				alert(message);
+			}
+		}
+	</script>
+		
+
+
+
+</body>
+</html>
